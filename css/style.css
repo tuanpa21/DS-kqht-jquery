@@ -1,0 +1,32 @@
+
+#input-info {
+	width: 900px;
+	padding: 30px;
+}
+.info {
+	margin-bottom: 10px;
+}
+#updateButton {
+	margin-left: 10px;
+    margin-top: 15px;
+}
+td, th {
+	padding: 20px;
+	border: 1px solid black;
+}
+
+th:nth-of-type(2) {
+	width: 200px;
+	text-align: center;
+}
+td:nth-of-type(2) {
+	width: 200px;
+}
+
+#trungbinh {
+	    margin: 20px;
+    padding-left: 20px;
+}
+#HSG {
+	margin: 20px;
+}

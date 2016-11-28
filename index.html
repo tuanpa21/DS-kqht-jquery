@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ASM3-Option2</title>
+
+    <meta name="description" content="ASM3 Update">
+    <meta name="author" content="Phạm Anh Tuấn">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div id="input-info" class="container-fluid">
+		<div class="row info">
+			<div class="col-md-2">
+			<p>Họ tên</p>
+			</div>
+			<div class="col-md-10">
+			<p><input type="text" name="ho-ten" id ="Ho-ten"> Họ tên bắt buộc nhập</p>
+			</div>
+		</div>
+		<div class="row info">
+			<div class="col-md-2">
+			<p>Lớp</p>
+			</div>
+			<div class="col-md-10">
+			<p>
+			<input type="text" name="lop" id="Lop"> Lớp học bắt buộc nhập
+			</p>
+			</div>
+		</div>
+		<div class="row info">
+			<div class="col-md-2">
+			<p>Điểm Toán</p>
+			</div>
+			<div class="col-md-10">
+			<p><input type="number" name="toan" id="Toan"> Điểm Toán phải nhập và là số trong khoảng từ 0 đến 10</p>
+			</div>
+		</div>
+		<div class="row info">
+			<div class="col-md-2">
+			<p>Điểm Lý</p>
+			</div>
+			<div class="col-md-10">
+			<p><input type="number" name="ly" id="Ly"> Điểm Lý phải nhập và là số trong khoảng từ 0 đến 10</p>
+			</div>
+		</div>
+		<div class="row info">
+			<div class="col-md-2">
+			<p>Điểm Hóa</p>
+			</div>
+			<div class="col-md-10">
+			<p><input type="number" name="hoa" id="Hoa"> Điểm Hóa phải nhập và là số trong khoảng từ 0 đến 10</p>
+			<button type="button" class="btn btn-primary" id="updateButton" onclick="productUpdate()">Nhập</button>
+			</div>
+		</div>
+		<div id="input-info" class="row">
+			<table id="productTable">
+				<tr>
+					<th>STT</th>
+					<th>Họ Tên</th>
+					<th>Lớp</th>
+					<th>Toán</th>
+					<th>Lý</th>
+					<th>Hóa</th>
+					<th>Trung bình</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Phạm Anh Tuấn</td>
+					<td>FU NỊC</td>
+					<td>10</td>
+					<td>10</td>
+					<td>10</td>
+					<td>10</td>
+				</tr>
+			</table>
+			<button type="button" class="btn btn-primary" id="trungbinh" onclick="trungbinh()">Tính TB</button> </br>
+			<button type="button" class="btn btn-primary" id="HSG" onclick="hsg()">Tìm HSG</button>
+		</div>
+	</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+  </body>
+</html>
